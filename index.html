@@ -3,24 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brochure Viewer</title>
+    <title>PDF Collection Viewer</title>
     <style>
         body {
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .folder-container {
+            margin-bottom: 60px;
+        }
+        .pdf-container {
+            margin-bottom: 40px;
         }
         iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
             width: 100%;
-            height: 100%;
-            border: none;
+            height: 500px;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
-    <iframe src="https://mlssimpl-my.sharepoint.com/:f:/p/admin/EkFkXWL3FPBMqTY-XEje6boBVjOrmyyBFJBXma9OiWj0LQ?e=puJ3tI" width="100%" height="600px"></iframe>
+
+    <!-- Main Folder -->
+    <h1>Main Folder - PDF Viewer</h1>
+
+    <!-- Folder 1 -->
+    <div class="folder-container">
+        <h2>PDFs from Folder 1</h2>
+
+        <div class="pdf-container">
+            <h3>PDF 1 from Folder 1</h3>
+            <iframe src="https://drive.google.com/file/d/13KSSRnCy52OjZtq9Q7j7C_lOAnV7y-Ks/preview"></iframe>
+        </div>
+
+        <div class="pdf-container">
+            <h3>PDF 2 from Folder 1</h3>
+            <iframe src="https://drive.google.com/file/d/1DshLN6Co0yOHJBZ_WsxubRNJVrXiQrj7/preview"></iframe>
+        </div>
+
+        <!-- Add more PDFs from Folder 1 as needed -->
+    </div>
+
+    <!-- Folder 2 -->
+    <div class="folder-container">
+        <h2>PDFs from Folder 2</h2>
+
+        <div class="pdf-container">
+            <h3>PDF 1 from Folder 2</h3>
+            <iframe src="https://drive.google.com/file/d/1GvwRqPVBd0NxHjxQIxj25uWYY_-Ze69p/preview"></iframe>
+        </div>
+
+        <div class="pdf-container">
+            <h3>PDF 2 from Folder 2</h3>
+            <iframe src="https://drive.google.com/file/d/1Y9yHMVBsayTuu4Z8TAs59KWFG5KE3gC-/preview"></iframe>
+        </div>
+
+        <!-- Add more PDFs from Folder 2 as needed -->
+    </div>
+
 </body>
 </html>
