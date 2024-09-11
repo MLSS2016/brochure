@@ -6,35 +6,74 @@
     <title>Brochures - PDF Viewer</title>
     <style>
         body {
-            font-family: Garamond;
-            padding: 30px;
+            font-family: Garamond, serif;
+            padding: 15px;
             margin: 0;
             background-image: url('https://i.imgur.com/5Su7QHi.png');
-            background-size: 500px; /* Adjust the size of the watermark */
+            background-size: 300px; /* Adjusted for better mobile compatibility */
             background-position: center;
             background-repeat: no-repeat;
-            background-attachment: fixed; /* Keeps the watermark fixed on the screen */
-            opacity: 100; /* Adjust the opacity of the watermark */
+            background-attachment: fixed;
+            opacity: 100;
         }
+
         .logo {
             position: absolute;
             top: 10px;
             right: 10px;
-            width: 300px;
+            width: 150px; /* Smaller size for mobile view */
             height: auto;
         }
+
+        .content {
+            max-width: 100%; /* Ensures content doesn't overflow */
+            margin: 0 auto;
+            padding-top: 50px; /* Adds space for the logo */
+        }
+
         .folder {
             margin-bottom: 20px;
         }
+
         a {
             text-decoration: none;
             color: #007bff;
-            font-size: 25px;
+            font-size: 18px; /* Smaller font size for mobile view */
             display: block;
             margin-bottom: 10px;
         }
+
         a:hover {
             text-decoration: underline;
+        }
+
+        p {
+            font-size: 16px; /* Adjusted paragraph font size for better readability */
+            margin: 0 0 10px 0;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 10px; /* Reduced padding for smaller screens */
+            }
+
+            .logo {
+                width: 120px; /* Further reduced size for smaller screens */
+                top: 5px;
+                right: 5px;
+            }
+
+            a {
+                font-size: 16px; /* Smaller font size for better fit on small screens */
+            }
+
+            p {
+                font-size: 14px; /* Adjusted paragraph font size for smaller screens */
+            }
+
+            .content {
+                padding-top: 20px; /* Adjusts spacing for smaller screens */
+            }
         }
     </style>
 </head>
@@ -46,17 +85,17 @@
         <h1>Brochures - PDF Viewer</h1>
 
         <!-- Links to folders -->
-    <div class="folder">
-        <h2><a href="masimo.html">Masimo</a></h2>
-        <p>Discover the SET Advantage</p>
-        <p>Industry-Leading, Clinically Proven Pluse Oximetry</p>
-    </div>
+        <div class="folder">
+            <h2><a href="masimo.html">Masimo</a></h2>
+            <p>Discover the SET Advantage</p>
+            <p>Industry-Leading, Clinically Proven Pulse Oximetry</p>
+        </div>
 
-    <div class="folder">
-        <h2><a href="philips.html">Philips</a></h2>
-        <p>Philips delivers innovation that matters to you</p>
-        <p>Together, we make life better</p>
-    </div>
+        <div class="folder">
+            <h2><a href="philips.html">Philips</a></h2>
+            <p>Philips delivers innovation that matters to you</p>
+            <p>Together, we make life better</p>
+        </div>
     </div>
 
 </body>
