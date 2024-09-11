@@ -6,39 +6,78 @@
     <title>Masimo</title>
     <style>
         body {
-            font-family: Garamond;
-            padding: 30px;
+            font-family: Garamond, serif;
+            padding: 15px;
             margin: 0;
             background-image: url('https://i.imgur.com/5Su7QHi.png');
-            background-size: 500px; /* Adjust the size of the watermark */
+            background-size: 300px; /* Adjusted for better mobile compatibility */
             background-position: center;
             background-repeat: no-repeat;
-            background-attachment: fixed; /* Keeps the watermark fixed on the screen */
-            opacity: 100; /* Adjust the opacity of the watermark */
+            background-attachment: fixed;
+            opacity: 100;
         }
+
         .logo {
             position: absolute;
             top: 10px;
             right: 10px;
-            width: 300px; /* Adjust size as needed */
-            height: auto; /* Maintain aspect ratio */
+            width: 150px; /* Smaller size for mobile view */
+            height: auto;
         }
+
+        h1 {
+            font-size: 24px; /* Smaller heading for mobile */
+            text-align: center; /* Centered for better appearance on mobile */
+            margin-bottom: 20px;
+        }
+
         a {
             text-decoration: none;
             color: #007bff;
-            font-size: 25px;
+            font-size: 18px; /* Smaller font size for mobile view */
             display: block;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            text-align: center; /* Center links for better mobile view */
         }
+
         a:hover {
             text-decoration: underline;
+        }
+
+        .pdf-container h2 {
+            font-size: 20px; /* Adjusted size for mobile */
+            margin-bottom: 15px;
+            text-align: center; /* Centered for better appearance on mobile */
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 10px; /* Reduced padding for smaller screens */
+            }
+
+            .logo {
+                width: 120px; /* Further reduced size for smaller screens */
+                top: 5px;
+                right: 5px;
+            }
+
+            h1 {
+                font-size: 20px; /* Further reduced heading size for mobile */
+            }
+
+            a {
+                font-size: 16px; /* Smaller font size for better fit on small screens */
+            }
+
+            .pdf-container h2 {
+                font-size: 18px; /* Adjusted size for smaller screens */
+            }
         }
     </style>
 </head>
 <body>
 
-    <!-- MLSS Implant Medicare Pvt Ltd -->
-<img src="https://i.imgur.com/NyvS54C.jpeg" alt="Company Logo" class="logo">
+    <img src="https://i.imgur.com/NyvS54C.jpeg" alt="Company Logo" class="logo">
 
     <h1>Masimo</h1>
     <a href="index.html">Back to Brochures</a>
