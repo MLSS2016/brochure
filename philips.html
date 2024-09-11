@@ -9,8 +9,16 @@
             font-family: Garamond;
             padding: 30px;
             margin: 0;
-            position: relative;
+            background-image: url('https://i.imgur.com/5Su7QHi.png');
+            background-size: 500px; /* Adjust the size of the watermark */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* Keeps the watermark fixed on the screen */
+            opacity: 100; /* Adjust the opacity of the watermark */
         }
+        .content {
+            position: relative;
+            z-index: 1;
         .logo {
             position: absolute;
             top: 10px;
